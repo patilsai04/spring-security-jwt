@@ -20,6 +20,25 @@ It includes secure login, role-based access control, and token validation for RE
 - Token validation filter for every request
 - Refresh token support for long-lived sessions
 
+## Example -
+POST /auth/register
+{
+  "username":"sai@gmail.com",
+  "password":"sai123"
+}
+successfully register...
+
+Post /auth/login
+{
+  "username":"sai@gmail.com",
+  "password":"sai123"
+}
+-----
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlAZ21haWwuY29tIiwiaWF0IjoxNzg3NjM0ODI2LCJleHAiOjE3ODc2MzU3MjZ9.yg4Go1LLsSDJwH1Ew5y15pt54fwIWnx7wcOVKRcNAOQ",
+  "refreshToken": "71b9ee84-a971-4f45-aea8-e14cd33117a1"
+}
+
 ## 🛠️ Setup
 1. Clone the repo:
    ```bash
